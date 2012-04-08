@@ -58,17 +58,29 @@ This document outlines coding standards and conventions that are recommended for
 
 ### CSS resets
 
-### !Important
+### !important
+
+The !important rule when applied to a CSS property will override properties applied through the cascade. Overriding the cascade significantly increases the effort in maintaining the code.
+
+The !important rule must be avoided.
 
 ### Internet Explorer conditional comments
 
 ### Internet Explorer compatibility mode
+
+Internet Explorer can render as if it were a previous version without explicit instruction from the browser user. To prevent this, we inform the browser that the latest render engine version for the particular browser should be used. 
+
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 
 ### CSS validation
 
 ### CSS quality analysis
 
 ## JavaScript
+
+### External files
+
+#### Revision numbers
 
 ### JavaScript libraries
 
