@@ -86,6 +86,17 @@ The !important rule must be avoided.
 
 ### Internet Explorer conditional comments
 
+Conditional comments are a simple conditional statement that allows IE to read the content of a comment. It can be used to set IE specific hooks for CSS.
+
+Although there are different methods for implementing conditional comments, the recommended approach is to set an IE specific classname on the HTML tag reducing the number of style sheet requests.
+
+	<!--[if IE 7]><html class="ie7" lang="en"><![endif]-->
+	<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+	<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
+	<!--[if !IE]><!--><html lang="en"><!--<![endif]-->
+	
+Conditional comments will not be supported in [IE10](http://blogs.msdn.com/b/ie/archive/2011/07/06/html5-parsing-in-ie10.aspx).
+
 ### Internet Explorer compatibility mode
 
 Internet Explorer can render as if it were a previous version without explicit instruction from the browser user. To prevent this, we inform the browser that the latest render engine version for the particular browser should be used. 
@@ -144,6 +155,6 @@ Internet Explorer can render as if it were a previous version without explicit i
 
 ## Notes
 
-1.	Specific revision control system option is dependent on project requirements.
+1. Specific revision control system option is dependent on project requirements.
 
 ## References
