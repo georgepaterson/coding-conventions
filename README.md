@@ -10,20 +10,21 @@ This document outlines coding standards and conventions that are recommended for
 
 Revision control should be used on all projects.   
 
-Subversion or Git are recommended revision control systems. [[1](#note-1)] 
+Subversion and Git are recommended revision control systems. [[1](#note-1)] 
 
 ### Continuous integration
 
-Continuous integration should be implemented for all projects. Code committed to revision control should be... 
+Continuous integration should be implemented for all projects. Code committed to revision control should be validated against international standards and best practice. If the code passes validation then it should be processed for deployment. Deployment process should include concatenation and minification.
 
 ### Coding style
 
+Extension and maintenance of code is reliant on the developer understanding their peers code. Code should be self descriptive, use whitespace and include verbose commenting. Concatenation and minification of code before deployment will eliminate overhead on production code.   
 
-#### Indentation
+### Indentation
 
 Space characters should be used to indent code, tab characters should be avoided. Soft tabs are available in most development environments, soft tabs act like hard tabs but resolves to spaces. Default indentation is 4 spaces.
 
-#### Line length
+### Line length
 
 Dynamic word wrapping and high resolution displays makes fixed line length for content obsolete. However in programming arbitrary wrapping can make code difficult to understand. Manual line breaks are preferred for code. 
 
@@ -51,9 +52,9 @@ A default line length of 80 characters is recommend.
 
 #### Standard formatting
 
-#### Indented formatting
-
 #### Single line formatting
+
+#### Indented formatting
 
 ### Selectors
 
