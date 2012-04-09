@@ -90,10 +90,10 @@ Conditional comments are a simple conditional statement that allows IE to read t
 
 Although there are different methods for implementing conditional comments, the recommended approach is to set an IE specific classname on the HTML tag reducing the number of style sheet requests.
 
-	<!--[if IE 7]><html class="ie7" lang="en"><![endif]-->
-	<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
-	<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
-	<!--[if !IE]><!--><html lang="en"><!--<![endif]-->
+	<!--[if IE 7]><html class="ie7" lang="en-GB" dir="ltr"><![endif]-->
+	<!--[if IE 8]><html class="ie8" lang="en-GB" dir="ltr"><![endif]-->
+	<!--[if IE 9]><html class="ie9" lang="en-GB" dir="ltr"><![endif]-->
+	<!--[if !IE]><!--><html lang="en-GB" dir="ltr"><!--<![endif]-->
 	
 Conditional comments will not be supported in [IE10](http://blogs.msdn.com/b/ie/archive/2011/07/06/html5-parsing-in-ie10.aspx).
 
