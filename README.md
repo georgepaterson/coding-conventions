@@ -8,7 +8,15 @@ This document outlines coding standards and conventions that are recommended for
 
 ### Indentation
 
+Space characters should be used to indent code, tab characters should be avoided. Soft tabs are available in most development environments, soft tabs act like hard tabs but resolves to spaces. Default indentation is 4 spaces.
+
 ### Line length
+
+Dynamic word wrapping and high resolution displays makes fixed line length for content obsolete. However in programming arbitrary wrapping can make code difficult to understand. Manual line breaks are preferred for code. 
+
+In typography, the measure is a reference to the width of a column of text. The measure has an ideal range of 45 to 75 characters per line for optimal legibility. 
+
+A default line length of 80 characters is recommend.
 
 ### Compression and minification
 
@@ -21,6 +29,8 @@ This document outlines coding standards and conventions that are recommended for
 ### Doctype
 
 ### Syntax
+
+### HTML formatting
 
 ### Document object model
 
@@ -60,7 +70,7 @@ This document outlines coding standards and conventions that are recommended for
 
 ### !important
 
-The !important rule when applied to a CSS property will override properties applied through the cascade. Overriding the cascade significantly increases the effort in maintaining the code.
+The !important rule when applied to a CSS property will override the property value applied through the cascade. Overriding the cascade significantly increases the effort in maintaining the code.
 
 The !important rule must be avoided.
 
@@ -119,5 +129,6 @@ Internet Explorer can render as if it were a previous version without explicit i
 ### JavaScript quality analysis
 
 ## Notes
+ 
 
 ## References
