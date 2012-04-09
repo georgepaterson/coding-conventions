@@ -6,23 +6,30 @@ This document outlines coding standards and conventions that are recommended for
 
 ## General
 
-### Indentation
+### Revision control
+
+Revision control should be used on all projects.   
+
+Subversion or Git are recommended revision control systems. [[1](#note-1)] 
+
+### Continuous integration
+
+Continuous integration should be implemented for all projects. Code committed to revision control should be... 
+
+### Coding style
+
+
+#### Indentation
 
 Space characters should be used to indent code, tab characters should be avoided. Soft tabs are available in most development environments, soft tabs act like hard tabs but resolves to spaces. Default indentation is 4 spaces.
 
-### Line length
+#### Line length
 
 Dynamic word wrapping and high resolution displays makes fixed line length for content obsolete. However in programming arbitrary wrapping can make code difficult to understand. Manual line breaks are preferred for code. 
 
 In typography, the measure is a reference to the width of a column of text. The measure has an ideal range of 45 to 75 characters per line for optimal legibility. 
 
 A default line length of 80 characters is recommend.
-
-### Compression and minification
-
-### Naming
-
-#### Hungarian notation  
 
 ## HTML
 
@@ -49,6 +56,8 @@ A default line length of 80 characters is recommend.
 #### Single line formatting
 
 ### Selectors
+
+### Selector naming
 
 ### Specificity
 
@@ -96,6 +105,10 @@ Internet Explorer can render as if it were a previous version without explicit i
 
 ### JavaScript naming
 
+### Variable and function names
+
+#### Hungarian notation
+
 ### Variable declarations
 
 #### Arrays
@@ -129,6 +142,7 @@ Internet Explorer can render as if it were a previous version without explicit i
 ### JavaScript quality analysis
 
 ## Notes
- 
+
+1.	Specific revision control system option is dependent on project requirements.
 
 ## References
