@@ -32,6 +32,8 @@ In typography, the measure is a reference to the width of a column of text. The 
 
 A default line length of 80 characters is recommend.
 
+### Leaky abstraction
+
 ## HTML
 
 ### Doctype
@@ -77,6 +79,8 @@ A default line length of 80 characters is recommend.
 ### CSS comments
 
 ### CSS resets
+
+### CSS preprocessors
 
 ### !important
 
@@ -148,6 +152,39 @@ Internet Explorer can render as if it were a previous version without explicit i
 ### Operators
 
 ### Eval
+
+### Reserved words
+
+* [break](https://developer.mozilla.org/en/JavaScript/Reference/Statements/break)
+* [case](https://developer.mozilla.org/en/JavaScript/Reference/Statements/switch)
+* [catch](https://developer.mozilla.org/en/JavaScript/Reference/Statements/try...catch)
+* [continue](https://developer.mozilla.org/en/JavaScript/Reference/Statements/continue)
+* [debugger](https://developer.mozilla.org/en/JavaScript/Reference/Statements/debugger)
+* [default](https://developer.mozilla.org/en/JavaScript/Reference/Statements/switch)
+* [delete](https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/delete)
+* [do](https://developer.mozilla.org/en/JavaScript/Reference/Statements/do...while)
+* [else](https://developer.mozilla.org/en/JavaScript/Reference/Statements/if...else)
+* [finally](https://developer.mozilla.org/en/JavaScript/Reference/Statements/try...catch)
+* [for](https://developer.mozilla.org/en/JavaScript/Reference/Statements/for)
+* [function](https://developer.mozilla.org/en/JavaScript/Reference/Statements/function)
+* [if](https://developer.mozilla.org/en/JavaScript/Reference/Statements/if...else)
+* [in](https://developer.mozilla.org/en/JavaScript/Reference/Statements/for...in)
+* [instanceof](https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/instanceof)
+* [new](https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/new)
+* [return](https://developer.mozilla.org/en/JavaScript/Reference/Statements/return)
+* [switch](https://developer.mozilla.org/en/JavaScript/Reference/Statements/switch)
+* [this](https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/this)
+* [throw](https://developer.mozilla.org/en/JavaScript/Reference/Statements/throw)
+* [try](https://developer.mozilla.org/en/JavaScript/Reference/Statements/try...catch)
+* [typeof](https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/typeof)
+* [var](https://developer.mozilla.org/en/JavaScript/Reference/Statements/var)
+* [void](https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/void)
+* [while](https://developer.mozilla.org/en/JavaScript/Reference/Statements/while)
+* [with](https://developer.mozilla.org/en/JavaScript/Reference/Statements/with)
+
+
+
+
 
 ### JavaScript comments
 
