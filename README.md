@@ -32,13 +32,37 @@ In typography, the measure is a reference to the width of a column of text. The 
 
 A default line length of 80 characters is recommend.
 
-### Leaky abstraction
+### File paths
+
+All file paths should be absolute. Apache folder aliasing or IIS virtual folders can be used  
 
 ## HTML
 
 ### Doctype
 
+The doctype should be the first element declared on the page and the HTML5 doctype should be used. 
+
+	<!DOCTYPE html>
+	
+The HTML5 eliminates the Document Type Declaration. Although HTML5 is case insensitive we retain the formal syntax to allow the document to be parsed as XML.
+
 ### Syntax
+
+Even though HTML5 is case insensitive all HTML tags and associated attributes should be lower case to improve readability.
+
+Attributes should be fully defined with double quotes:
+
+	<video autoplay="true"></video>
+	
+All tags must have a start and end tag including optional tags.
+
+	<p></p>
+
+Single tags must be self closing.
+
+	<input type="text" />
+
+Descriptive syntax improves the understandability of the HTML document for distributed developers
 
 ### HTML formatting
 
@@ -181,9 +205,6 @@ Internet Explorer can render as if it were a previous version without explicit i
 * [void](https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/void)
 * [while](https://developer.mozilla.org/en/JavaScript/Reference/Statements/while)
 * [with](https://developer.mozilla.org/en/JavaScript/Reference/Statements/with)
-
-
-
 
 
 ### JavaScript comments
