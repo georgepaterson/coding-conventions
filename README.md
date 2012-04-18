@@ -34,7 +34,27 @@ A default line length of 80 characters is recommend.
 
 ### File paths
 
-All file paths should be absolute. Apache folder aliasing or IIS virtual folders can be used  
+All file paths should be absolute. Apache folder aliasing or IIS virtual folders can be used to map file paths, allowing files to be easily repositioned within the project folder structure.
+
+Apache alias example:
+
+	<VirtualHost *:80>
+	    ServerName your-site.tld
+	    DocumentRoot "/var/www/your-site"
+		Alias /asset /path/to/asset
+	    <Directory "/var/www/html/your-site">
+	        Options Indexes FollowSymLinks +Includes ExecCGI
+	        AllowOverride All
+	        Order allow,deny
+	        Allow from all
+	    </Directory>
+	</VirtualHost>
+	
+File reference for a project style sheet: 
+
+	<link rel="stylesheet" href="/assets/theme/style/common.css?ver=1" media="screen">
+
+Relative file paths are to be avoided.  
 
 ## HTML
 
