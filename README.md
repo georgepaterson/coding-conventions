@@ -76,7 +76,9 @@ Attributes should be fully defined with double quotes:
 	
 All tags must have a start and end tag including optional tags.
 
-	<p></p>
+	<ul>
+		<li>A closing list element may be optional but well structured code removes ambiguity.</li>
+	</ul>
 
 Single tags must be self closing.
 
