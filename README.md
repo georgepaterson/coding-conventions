@@ -86,9 +86,60 @@ Single tags must be self closing.
 
 Descriptive syntax improves the understandability of the HTML document for distributed developers
 
-### HTML formatting
-
 ### Document object model
+
+The Document Object Model (DOM) is the fundamental structure for understanding objects and there associated methods within HTML and XML documents; we can interact with DOM through the use of JavaScript.
+
+When constructing a HTML document it is vital the developer understands the DOM, every object placed within the document should have meaning and purpose. We wish to avoid an over complicated DOM for performance but also future maintenance; the code itself should be self describing.
+
+This code uses more objects than is needed to describe the form. 
+
+	<html lang="en-GB" dir="ltr">
+		<head>
+			<title>An unnecessary complex DOM</title>
+		</head>
+		<body>
+			<div>
+				<form>
+					<ul>
+						<li>
+							<div>
+								<label></label>
+								<input />
+							</div>
+						</li>
+						<li>
+							<div>
+								<label></label>
+								<input />
+							</div>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</body
+	</html>
+	
+We should aim to reduce the number of objects used to only those required to describe the document. 
+	
+	<html lang="en-GB" dir="ltr">
+		<head>
+			<title>A simple DOM</title>
+		</head>
+		<body>
+			<form>
+				<fieldset>
+					<legend></legend>
+					<label></label>
+					<input />
+					<label></label>
+					<input />
+				</fieldset>
+			</form>	
+		</body
+	</html>
+
+Only if we are unable to style the objects with CSS or manipulate them with JavaScript should we chose to place additional objects in the DOM. Each choice must be justifiable. 
 
 ### HTML comments
 
