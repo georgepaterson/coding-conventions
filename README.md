@@ -18,7 +18,7 @@ Continuous integration should be implemented for all projects. Code committed to
 
 ### Coding style
 
-Extension and maintenance of code is reliant on the developer understanding their peers code. Code should be self descriptive, use whitespace and include verbose commenting. Concatenation and minification of code before deployment will eliminate overhead on production code.   
+Extension and maintenance of code is reliant on the developer understanding peer written code. Code should be self descriptive, use whitespace and include verbose commenting. Concatenation and minification of code before deployment will eliminate overhead on production code.   
 
 ### Indentation
 
@@ -143,7 +143,28 @@ Only if we are unable to style the objects with CSS or manipulate them with Java
 
 ### HTML comments
 
+HTML comments can either be single line or multiple line. All comments should be made before the code they are describing and share the same tab indent.
+
+Single line comments should describe simple HTML constructs.
+
+	<!-- Single line comment. -->
+	
+Multiple line comments should describe complex HTML constructs.
+	
+	<!--  
+		Multiple line comment.
+		Should be used to describe complex structures.
+	-->
+	
+Comments should describe the purpose of the HTML construct but should not be so verbose as to make the HTML document unreadable. Comments can be removed during the build process before deployment.
+
 ### HTML validation
+
+All HTML should be validated against the [HTML5 specification](http://validator.w3.org/).
+
+Any HTML asynchronously injected in to the document should also be validated.
+
+Validation should form part of the build process and failure to validate should cause the build to fail.
 
 ## CSS
 
