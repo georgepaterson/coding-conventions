@@ -1,8 +1,8 @@
-# Coding standards
+# Coding conventions
 
 ## Purpose of this document
 
-This document outlines coding standards and conventions that are recommended for client side development. Coding to a standard is not a barrier to innovation, it is a living document that should be updated by new concepts and implementation patterns. Through maintaining standards in development we support better understandability and maintainability of our code.
+This document outlines [coding conventions](http://en.wikipedia.org/wiki/Coding_conventions) and standards that are recommended for client side development. Coding to a convention is not a barrier to innovation, it is a living document that should be updated by new concepts and implementation patterns. Through maintaining standards in development we support better understandability and maintainability of our code.
 
 ## General
 
@@ -170,11 +170,40 @@ Validation should form part of the build process and failure to validate should 
 
 ### CSS formatting
 
-#### Standard formatting
+There are several ways to format CSS. Two primary methods focus either on the selectors or the properties.
 
-#### Single line formatting
+Single line formatting focuses on the selector.
 
-#### Indented formatting
+	.product-list .product {display: inline-block; width: 150px; background: #DDD; padding: 10px 0; margin: 0 10px 5px;}
+	
+Multiple line formatting focuses on the properties.
+
+	.product-list .product {
+		display: inline-block; 
+		width: 150px; 
+		background: #DDD; 
+		padding: 10px 0; 
+		margin: 0 10px 5px;
+	}
+	
+Both single line and multiple line formatting can be indented to indicate a parent/child relationship with other selectors.
+
+	.product-list {display: block; width: 510px; margin: 0 10px;}
+		.product-list .product {display: inline-block; width: 150px; background: #DDD; padding: 10px 0; margin: 0 10px 5px;}
+	
+	.product-list {
+		display: block; 
+		width: 510px; 
+		margin: 0 10px;
+	}	
+		.product-list .product {
+			display: inline-block; 
+			width: 150px; 
+			background: #DDD; 
+			padding: 10px 0; 
+			margin: 0 10px 5px;
+		}
+ 
 
 ### Selectors
 
