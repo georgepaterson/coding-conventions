@@ -174,34 +174,32 @@ There are several ways to format CSS. Two primary methods focus either on the se
 
 Single line formatting focuses on the selector.
 
-	.product-list .product {display: inline-block; width: 150px; background: #DDD; padding: 10px 0; margin: 0 10px 5px;}
+	.product-list .product {background: #DDD; display: inline-block; margin: 0 10px 5px; width: 510px;}
 	
 Multiple line formatting focuses on the properties.
 
 	.product-list .product {
-		display: inline-block; 
-		width: 150px; 
-		background: #DDD; 
-		padding: 10px 0; 
+		background: #DDD;
+		display: inline-block;   
 		margin: 0 10px 5px;
+		width: 150px;
 	}
 	
-Both single line and multiple line formatting can be indented to indicate a parent/child relationship with other selectors.
+Both single line and multiple line formatting can be indented to refer to the tree structure of the DOM.
 
-	.product-list {display: block; width: 510px; margin: 0 10px;}
-		.product-list .product {display: inline-block; width: 150px; background: #DDD; padding: 10px 0; margin: 0 10px 5px;}
+	.product-list {display: block; margin: 0 10px; width: 510px;}
+		.product-list .product {background: #DDD; display: inline-block; margin: 0 10px 5px; width: 510px;}
 	
 	.product-list {
 		display: block; 
-		width: 510px; 
 		margin: 0 10px;
+		width: 510px;
 	}	
 		.product-list .product {
-			display: inline-block; 
-			width: 150px; 
-			background: #DDD; 
-			padding: 10px 0; 
+			background: #DDD;
+			display: inline-block;   
 			margin: 0 10px 5px;
+			width: 150px;
 		}
  
 
