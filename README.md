@@ -201,7 +201,24 @@ Both single line and multiple line formatting can be indented to refer to the tr
 			margin: 0 10px 5px;
 			width: 150px;
 		}
- 
+
+By putting all the CSS properties on a single line this makes it impossible for revision control to identify changes to individual properties. Single line CSS will also fail line length conventions for complex styling.
+
+Indenting CSS to the refer to the structure of the DOM is an artificial process with no support within the language.
+
+It is recommended that multiple line formatting is used without indentation.
+
+	.product-list {
+		display: block; 
+		margin: 0 10px;
+		width: 510px;
+	}	
+	.product-list .product {
+		background: #DDD;
+		display: inline-block;   
+		margin: 0 10px 5px;
+		width: 150px;
+	}
 
 ### Selectors
 
