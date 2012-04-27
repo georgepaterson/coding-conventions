@@ -202,11 +202,11 @@ Both single line and multiple line formatting can be indented to refer to the tr
 			width: 150px;
 		}
 
-By putting all the CSS properties on a single line this makes it impossible for revision control to identify changes to individual properties. Single line CSS will also fail line length conventions for complex styling.
+By putting all the CSS properties on a single line this makes it impossible for revision control to identify changes to individual properties. Single line CSS will also fail line length conventions for complex styling. If you need to scan selectors, leverage the power of your code editor, for instance Textmate's 'Go To Symbol' navigation option will let you traverse the file by selector. 
 
-Indenting CSS to the refer to the structure of the DOM is an artificial process with no support within the language.
+Indenting CSS to the refer to the structure of the DOM is an artificial process with not currently supported within the language. The choice of selector should be sufficient to understand it's position within the DOM.
 
-It is recommended that multiple line formatting is used without indentation.
+It is therefore recommended that multiple line formatting is used without indentation.
 
 	.product-list {
 		display: block; 
@@ -219,6 +219,12 @@ It is recommended that multiple line formatting is used without indentation.
 		margin: 0 10px 5px;
 		width: 150px;
 	}
+	
+### CSS property order
+
+A consistent CSS property order will aid in the compression of the style sheet.
+
+The recommended method to achieve this is to order properties alphabetically.
 
 ### Selectors
 
