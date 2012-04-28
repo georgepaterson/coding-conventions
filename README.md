@@ -2,7 +2,7 @@
 
 ## Purpose of this document
 
-This document outlines [coding conventions](http://en.wikipedia.org/wiki/Coding_conventions) and standards that are recommended for client side development. Coding to a convention is not a barrier to innovation, it is a living document that should be updated by new concepts and implementation patterns. Through maintaining standards in development we support better understandability and maintainability of our code.
+This document outlines [coding conventions](http://en.wikipedia.org/wiki/Coding_conventions) and standards that are recommended for client side development. Coding to a convention is not a barrier to innovation, it is a living document that should be updated by new concepts and implementation patterns. Through maintaining conventions in development we support better understandability and maintainability of our code.
 
 ## General
 
@@ -74,7 +74,7 @@ Attributes should be fully defined with double quotes:
 
 	<video autoplay="true"></video>
 	
-All tags must have a start and end tag including optional tags.
+All tags, including optional tags, must have a start and end tag.
 
 	<ul>
 		<li>A closing list element may be optional but well structured code removes ambiguity.</li>
@@ -246,6 +246,19 @@ The recommended method to achieve this is to order properties alphabetically.
 
 ### CSS comments
 
+CSS comments can either be single line or multiple line. All comments should be made before the code they are describing.
+
+Single line comments should describe single selectors, avoid describing properties.
+
+	/* Single line comment. */
+
+Multiple line comments should describe complex CSS blocks.
+
+	/*
+		Multiple line comment.
+		Should be used to describe complex CSS blocks.
+	*/
+
 ### CSS resets
 
 ### CSS preprocessors
@@ -283,8 +296,6 @@ Internet Explorer can render as if it were a previous version without explicit i
 
 ### External files
 
-#### Revision numbers
-
 ### JavaScript libraries
 
 ### JavaScript naming
@@ -294,6 +305,8 @@ Internet Explorer can render as if it were a previous version without explicit i
 #### Hungarian notation
 
 ### Variable declarations
+
+#### Constants
 
 #### Arrays
 
@@ -305,21 +318,78 @@ Internet Explorer can render as if it were a previous version without explicit i
 
 #### If
 
-##### Ternary operator
+	if (condition) {
+		statement;
+	}
+
+	if (condition) {
+		statement;
+	} else {
+		statement;
+	}
+
+#### Else if
+
+	if (condition) {
+		statement;
+	} else if (condition) {
+		statement;
+	} else {
+		statement;
+	}
+	
+#### Switch
+
+	switch (expression) {
+		case label:
+			statement;
+			break;
+		case label:
+			statement;
+			break;
+		default:
+			statement;
+			break;
+	}
 
 #### For
 
+	for (expression; condition; expression) {
+		statement;
+	}
+
 #### While
+
+	while (condition) {
+		statement;
+	}
 
 #### Do
 
-#### Switch
-
+	do {
+		statement;
+	} while (condition);
+	
 #### Try
+
+	try {
+		statement;
+	}
+	catch (exception) {
+		statement;
+	}
 
 ### Operators
 
 ### Eval
+
+Eval is a predefined JavaScript function.
+
+	eval(string);
+	
+Eval will evaluate a string passed to it as if it was JavaScript code. It is an incredibly powerful function; however because it will evaluate any string as JavaScript it is a risk vector for poorly written or malicious code.
+
+Eval should be avoided.
 
 ### Reserved words
 
@@ -352,6 +422,19 @@ Internet Explorer can render as if it were a previous version without explicit i
 
 
 ### JavaScript comments
+
+JavaScript comments can either be single line or multiple line. All comments should be made before the code they are describing.
+
+Single line comments should describe simple functions, statements or variables.
+
+	// Single line comment.
+
+Multiple line comments should describe complex behaviour.
+
+	/*
+		Multiple line comment.
+		Should be used to describe complex behaviour.
+	*/
 
 ### JavaScript quality analysis
 
