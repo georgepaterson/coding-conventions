@@ -259,9 +259,11 @@ Multiple line comments should describe complex CSS blocks.
 		Should be used to describe complex CSS blocks.
 	*/
 
-### CSS resets
+### CSS abstraction
 
-### CSS preprocessors
+#### CSS resets
+
+#### CSS preprocessors
 
 ### !important
 
@@ -296,7 +298,11 @@ Internet Explorer can render as if it were a previous version without explicit i
 
 ### External files
 
-### JavaScript libraries
+### JavaScript abstraction
+
+#### JavaScript libraries
+
+#### JavaScript preprocessors
 
 ### JavaScript naming
 
@@ -312,7 +318,30 @@ Internet Explorer can render as if it were a previous version without explicit i
 
 #### Objects
 
-### Function declarations
+### Functions
+
+Functions can be written either as function declarations.
+
+	function example (options) {
+		
+	}
+
+Or as function expressions.
+
+	var example = function (options) {
+		
+	}
+	
+Although function expressions can be given a name. 
+
+	var example = function demo (options) {
+	
+	}
+
+Anonymous function expressions are preferred as the function is referenced by a single identifier.	
+	
+### Closures
+
 
 ### Statements
 
@@ -321,6 +350,8 @@ Internet Explorer can render as if it were a previous version without explicit i
 	if (condition) {
 		statement;
 	}
+
+
 
 	if (condition) {
 		statement;
@@ -442,4 +473,6 @@ Multiple line comments should describe complex behaviour.
 
 1. Specific revision control system option is dependent on project requirements.
 
-## References
+## Developer resources
+
+1. [Mozilla Developer Network](https://developer.mozilla.org/)
