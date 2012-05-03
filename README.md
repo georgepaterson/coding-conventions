@@ -298,21 +298,27 @@ Internet Explorer can render as if it were a previous version without explicit i
 
 ### External files
 
-### JavaScript abstraction
-
-#### JavaScript libraries
-
-#### JavaScript preprocessors
-
-### JavaScript naming
-
-### Variable and function names
-
-#### Hungarian notation
-
 ### Variable declarations
 
+Variables should be declared before use to prevent hoisting.
+
+Variables should be declared with a lower case letter and the identifier should have semantic value.
+
+	var example = 'value';
+	
+Use camel case to join words in a variable declaration.
+
+	var exampleVariable = 'value';
+
 #### Constants
+
+The constant declaration will be available in ECMAScript 6 and currently has partial cross browser support.
+
+	const EXAMPLE_CONSTANT = 'value';
+
+The convention for naming constant identifiers is in CAPS with an underscore used to join words. Do not use uppercase to name variables.
+
+#### Hungarian notation
 
 #### Arrays
 
@@ -339,9 +345,10 @@ Although function expressions can be given a name.
 	}
 
 Anonymous function expressions are preferred as the function is referenced by a single identifier.	
+
+### Constructors
 	
 ### Closures
-
 
 ### Statements
 
@@ -466,6 +473,12 @@ Multiple line comments should describe complex behaviour.
 		Multiple line comment.
 		Should be used to describe complex behaviour.
 	*/
+
+### JavaScript abstraction
+
+#### JavaScript libraries
+
+#### JavaScript preprocessors
 
 ### JavaScript quality analysis
 
