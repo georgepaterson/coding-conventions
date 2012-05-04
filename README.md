@@ -300,7 +300,7 @@ Internet Explorer can render as if it were a previous version without explicit i
 
 ### Variable declarations
 
-Variables should be declared before use to prevent hoisting.
+Variables should be declared before use to prevent hoisting and declared as close as possible to where you will use them.
 
 Variables should be declared with a lower case letter and the identifier should have semantic value.
 
@@ -320,6 +320,23 @@ The convention for naming constant identifiers is in CAPS with an underscore use
 
 #### Hungarian notation
 
+Hungarian notation has a long legacy but for the purposes of JavaScript it has become the prefixing of an identifier with a character or characters to represent type or privacy.
+
+Examples include:
+
+	/* An object */
+	var oExample = {};
+	/* An array */
+	var aExample = [];
+	/* An private variable */
+	var _example = 'test';
+	/* An jQuery object */
+	var $example = $('#example');
+	
+Prefixing an identifier does not enforce type or privacy. Identifiers should be named by what the do rather than what they are. The exceptions are capitalisation of constants and pascal case for constructors.
+
+Hungarian notation should be avoided.	
+
 #### Arrays
 
 #### Objects
@@ -329,19 +346,19 @@ The convention for naming constant identifiers is in CAPS with an underscore use
 Functions can be written either as function declarations.
 
 	function example (options) {
-		
+		statement;
 	}
 
 Or as function expressions.
 
 	var example = function (options) {
-		
+		statement;
 	}
 	
 Although function expressions can be given a name. 
 
 	var example = function demo (options) {
-	
+		statement;
 	}
 
 Anonymous function expressions are preferred as the function is referenced by a single identifier.	
@@ -489,3 +506,4 @@ Multiple line comments should describe complex behaviour.
 ## Developer resources
 
 1. [Mozilla Developer Network](https://developer.mozilla.org/)
+2. [Code Conventions for the JavaScript Programming Language](http://javascript.crockford.com/code.html)
