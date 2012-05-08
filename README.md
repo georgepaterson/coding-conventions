@@ -88,6 +88,7 @@ When constructing a HTML document it is vital the developer understands the DOM,
 
 This code uses more objects than is needed to describe the form. 
 
+	<!DOCTYPE html>
 	<html lang="en-GB" dir="ltr">
 		<head>
 			<title>An unnecessary complex DOM</title>
@@ -115,7 +116,8 @@ This code uses more objects than is needed to describe the form.
 	</html>
 	
 We should aim to reduce the number of objects used to only those required to describe the document. 
-	
+
+	<!DOCTYPE html>
 	<html lang="en-GB" dir="ltr">
 		<head>
 			<title>A simple DOM</title>
