@@ -42,12 +42,6 @@ Apache alias example:
 	    ServerName your-site.tld
 	    DocumentRoot "/var/www/your-site"
 		Alias /asset /path/to/asset
-	    <Directory "/var/www/html/your-site">
-	        Options Indexes FollowSymLinks +Includes ExecCGI
-	        AllowOverride All
-	        Order allow,deny
-	        Allow from all
-	    </Directory>
 	</VirtualHost>
 	
 File reference for a project style sheet: 
@@ -117,7 +111,7 @@ This code uses more objects than is needed to describe the form.
 					</ul>
 				</form>
 			</div>
-		</body
+		</body>
 	</html>
 	
 We should aim to reduce the number of objects used to only those required to describe the document. 
@@ -136,7 +130,7 @@ We should aim to reduce the number of objects used to only those required to des
 					<input />
 				</fieldset>
 			</form>	
-		</body
+		</body>
 	</html>
 
 Only if we are unable to style the objects with CSS or manipulate them with JavaScript should we chose to place additional objects in the DOM. Each choice must be justifiable. 
