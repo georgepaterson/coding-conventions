@@ -48,7 +48,37 @@ File reference for a project style sheet:
 
 	<link rel="stylesheet" href="/assets/theme/style/common.css?ver=1" media="screen">
 
-Relative file paths are to be avoided.  
+Relative file paths are to be avoided.
+
+### Hungarian notation
+
+Hungarian notation is split in to the original Applications Hungarian outlined by Charles Simonyi and it's evolution to Systems Hungarian. Applications Hungarian prefixes the identifier with the logical data type so that the identifier's purpose can be understood. Systems Hungarian prefixes the identifier with the physical data type.
+
+Examples of Applications Hungarian in JavaScript:
+
+	/* Identifies the variable as representing a height */
+	var hValue = value.getHeight();
+	/* Identifies the variable as a difference between values */
+	var dValue = firstValue - secondValue;
+	
+Applications Hungarian can be useful to the programmer in identifying the purpose of the variable, however when shortened to a prefix it loses semantic value as an initial lexicon may be required to decipher the prefix.
+
+Examples of Systems Hungarian in JavaScript:
+
+	/* An object */
+	var oExample = {};
+	/* An array */
+	var aExample = [];
+	/* A private variable */
+	var _example = 'test';
+	/* A jQuery object */
+	var $example = $('#example');
+
+In Systems Hungarian prefixing an identifier with the physical does not enforce type or privacy, this limits the value of the prefix. 
+
+Identifiers should be named by what the do rather than what they are, where Applications Hungarian may have had value in a large scale development eco-system, Systems Hungarian lost this value.
+
+Hungarian notation both Applications and Systems should be avoided.    
 
 ## HTML
 
@@ -312,26 +342,7 @@ The constant declaration will be available in ECMAScript 6 and currently has par
 
 	const EXAMPLE_CONSTANT = 'value';
 
-The convention for naming constant identifiers is in CAPS with an underscore used to join words. Do not use uppercase to name variables.
-
-#### Hungarian notation
-
-Hungarian notation has a long legacy but for the purposes of JavaScript it has become the prefixing of an identifier with a character or characters to represent type or privacy.
-
-Examples include:
-
-	/* An object */
-	var oExample = {};
-	/* An array */
-	var aExample = [];
-	/* An private variable */
-	var _example = 'test';
-	/* An jQuery object */
-	var $example = $('#example');
-	
-Prefixing an identifier does not enforce type or privacy. Identifiers should be named by what the do rather than what they are. The exceptions are capitalisation of constants and pascal case for constructors.
-
-Hungarian notation should be avoided.	
+The convention for naming constant identifiers is in CAPS with an underscore used to join words. Do not use uppercase to name variables.	
 
 #### Arrays
 
