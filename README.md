@@ -256,6 +256,36 @@ The recommended method to achieve this is to order properties alphabetically.
 
 ### Selector naming
 
+A consistent naming convention should be used within a project. Selector names should have semantic value and be named by their purpose, not how they affect the visual design.
+
+Selectors that use more than one word should use a clearly defined joining method. Three main methods are:
+
+Camel case:
+
+	.productList {
+		display: block; 
+		margin: 0 10px;
+		width: 510px;
+	}
+	
+Underscore separated:
+
+	.product_list {
+		display: block; 
+		margin: 0 10px;
+		width: 510px;
+	}
+	
+Dash separated:	
+	
+	.product-list {
+		display: block; 
+		margin: 0 10px;
+		width: 510px;
+	}
+	
+Dash separated is the preferred method, using the naming style of the HTML and CSS languages. 
+
 ### Specificity
 
 ### Units of measurement
