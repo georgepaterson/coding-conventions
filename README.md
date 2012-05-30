@@ -252,8 +252,6 @@ A consistent CSS property order will aid in the compression of the style sheet.
 
 The recommended method to achieve this is to order properties alphabetically.
 
-### Selectors
-
 ### Selector naming
 
 A consistent naming convention should be used within a project. Selector names should have semantic value and be named by their purpose, not how they affect the visual design.
@@ -284,7 +282,7 @@ Dash separated:
 		width: 510px;
 	}
 	
-Dash separated is the preferred method, using the naming style of the HTML and CSS languages. 
+Dash separated is the preferred method, using the naming style of the HTML and CSS languages.
 
 ### Specificity
 
@@ -297,8 +295,6 @@ Dash separated is the preferred method, using the naming style of the HTML and C
 #### Inline elements
 
 #### Inline-block elements 
-
-### CSS naming
 
 ### CSS comments
 
@@ -315,11 +311,9 @@ Multiple line comments should describe complex CSS blocks.
 		Should be used to describe complex CSS blocks.
 	*/
 
-### CSS abstraction
+### CSS resets
 
-#### CSS resets
-
-#### CSS preprocessors
+### CSS preprocessors
 
 ### !important
 
@@ -353,6 +347,18 @@ Internet Explorer can render as if it were a previous version without explicit i
 ## JavaScript
 
 ### External files
+
+All JavaScript should be referenced through external files. This improves maintenance of the project and files can be referenced after the DOM is loaded.
+
+When referencing a JavaScript file the type and charset attribute is no longer necessary.
+
+The obsolete attributes:
+
+	<script src="example.js" type="text/javascript" charset="utf-8"></script>
+	
+The simplified reference:
+
+	<script src="example.js"></script> 
 
 ### Variable declarations
 
