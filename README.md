@@ -274,7 +274,7 @@ Underscore separated:
 		width: 510px;
 	}
 	
-Dash separated:	
+Hyphen separated:	
 	
 	.product-list {
 		display: block; 
@@ -282,19 +282,11 @@ Dash separated:
 		width: 510px;
 	}
 	
-Dash separated is the preferred method, using the naming style of the HTML and CSS languages.
+Hyphen separated is the preferred method, using the naming style of the HTML and CSS languages.
 
 ### Specificity
 
 ### Units of measurement
-
-### Box model
-
-#### Block elements
-
-#### Inline elements
-
-#### Inline-block elements 
 
 ### CSS comments
 
@@ -310,10 +302,6 @@ Multiple line comments should describe complex CSS blocks.
 		Multiple line comment.
 		Should be used to describe complex CSS blocks.
 	*/
-
-### CSS resets
-
-### CSS preprocessors
 
 ### !important
 
@@ -339,6 +327,8 @@ Conditional comments will not be supported in [IE10](http://blogs.msdn.com/b/ie/
 Internet Explorer can render as if it were a previous version without explicit instruction from the browser user. To prevent this, we inform the browser that the latest render engine version for the particular browser should be used. 
 
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+### CSS resets
 
 ### CSS validation
 
@@ -388,7 +378,7 @@ The convention for naming constant identifiers is in CAPS with an underscore use
 
 Functions can be written either as function declarations.
 
-	function example (options) {
+	function example(options) {
 		statement;
 	}
 
@@ -400,7 +390,7 @@ Or as function expressions.
 	
 Although function expressions can be given a name. 
 
-	var example = function demo (options) {
+	var example = function demo(options) {
 		statement;
 	}
 
@@ -533,12 +523,6 @@ Multiple line comments should describe complex behaviour.
 		Multiple line comment.
 		Should be used to describe complex behaviour.
 	*/
-
-### JavaScript abstraction
-
-#### JavaScript libraries
-
-#### JavaScript preprocessors
 
 ### JavaScript quality analysis
 
