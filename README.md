@@ -286,6 +286,22 @@ Hyphen separated is the preferred method, using the naming style of the HTML and
 
 ### Specificity
 
+Specificity is used in CSS to calculate which selector should apply to a given element, with the higher specificity winning.
+
+
+| Element      |  Class       | Id           | Inline style |
+|--------------|------------- |------------- |------------- |
+| 0            | 0            | 0            | 0            |
+
+
+
+
+### !important
+
+The !important rule when applied to a CSS property will override the property value applied through specificity and the cascade. Overriding specificity and the cascade significantly increases the effort in maintaining the code.
+
+The !important rule must be avoided.
+
 ### Units of measurement
 
 ### CSS comments
@@ -302,12 +318,6 @@ Multiple line comments should describe complex CSS blocks.
 		Multiple line comment.
 		Should be used to describe complex CSS blocks.
 	*/
-
-### !important
-
-The !important rule when applied to a CSS property will override the property value applied through the cascade. Overriding the cascade significantly increases the effort in maintaining the code.
-
-The !important rule must be avoided.
 
 ### Internet Explorer conditional comments
 
