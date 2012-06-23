@@ -286,16 +286,33 @@ Hyphen separated is the preferred method, using the naming style of the HTML and
 
 ### Specificity
 
-Specificity is used in CSS to calculate which selector should apply to a given element, with the higher specificity winning.
+Specificity is used in CSS to calculate which selector should apply to a given element, with the higher specificity winning. 
 
+The specific values for each type. [[2](#note-2)] 
 
-| Element      |  Class       | Id           | Inline style |
-|--------------|------------- |------------- |------------- |
-| 0            | 0            | 0            | 0            |
+* ID selectors in the selector = 100
+* Class selectors, attributes selectors, and pseudo-classes in the selector = 10
+* Type selectors and pseudo-elements in the selector = 1
 
+Example specificity.
 
+	/* 1 HTML selector, a specificity of 1 */
+	section
+	/* 1 class selector, a specificity of 10 */
+	.facet
+	/* 1 ID selector, a specificity of 100 */
+	#facet-navigation
+	/* 2 HTML selectors, a specificity of 2 */
+	nav section
+	/* 1 ID selector, 1 class selector, a specificity of 110 */
+	#facet-navigation .facet
+	/* 2 HTML selectors, 1 ID selector, 1 class selector, a specificity of 112 */
+	nav#facet-navigation section.facet
 
+Selectors with equal specificity will respect the cascade. Selectors with greater specificity will not respect selectors with lesser specificity in the cascade.
 
+It is not recommended selectors are over specified as this will make the style sheet difficult to maintain.
+	
 ### !important
 
 The !important rule when applied to a CSS property will override the property value applied through specificity and the cascade. Overriding specificity and the cascade significantly increases the effort in maintaining the code.
@@ -539,6 +556,7 @@ Multiple line comments should describe complex behaviour.
 ## Notes
 
 1. Specific revision control system option is dependent on project requirements.
+2. [Calculating a selector's specificity](http://www.w3.org/TR/2009/PR-css3-selectors-20091215/#specificity)
 
 ## Developer resources
 
