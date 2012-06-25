@@ -321,6 +321,14 @@ The !important rule must be avoided.
 
 ### Units of measurement
 
+When choosing a unit of measurement by consistent in using that unit throughout a project, unless absolutely necessary. Mixed units increase the conceptual complexity of a property.
+
+Em units applied to an element, inherit their value from their parent element, with a complex DOM this can make em units inaccurate and difficult to use. This also applies to percentage units.
+
+Root em units avoid this as the value is relative to the root element and not any parent elements. Root em units do not have sufficient cross browser support for production use. 
+
+Pixels units do not have inheritance issues and are the preferred unit of measurement. Line-height is the exception to this and should be unit-less.  
+
 ### CSS comments
 
 CSS comments can either be single line or multiple line. All comments should be made before the code they are describing.
