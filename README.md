@@ -365,6 +365,10 @@ Internet Explorer can render as if it were a previous version without explicit i
 
 ### CSS resets
 
+CSS resets are a great source of information on default browser styles but in attempting to set a baseline for every possible element, this can increase the complexity of the style sheet, decrease performance and elements not styled lose browser fallback styling. If general styles are required they should be apparent through commonalities found in your selectors and properties within the style sheets. 
+
+Third party CSS resets should be avoided. 
+
 ### CSS validation
 
 ### CSS quality analysis
