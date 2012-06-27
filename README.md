@@ -371,7 +371,13 @@ Third party CSS resets should be avoided.
 
 ### CSS validation
 
+The progressive implementation of the CSS specification, browser specific features and vendor prefixing makes automated conformance to a specification difficult. CSS quality analysis is preferred.   
+
 ### CSS quality analysis
+
+CSS quality analysis is preferred over simple validation. 
+
+Manual review of CSS architect should be undertaken on a regular basis, CSSLint should form part of the Continuous Integration strategy. 
 
 ## JavaScript
 
