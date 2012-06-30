@@ -406,6 +406,10 @@ Variables should be declared with a lower case letter and the identifier should 
 Use camel case to join words in a variable declaration.
 
 	var exampleVariable = 'value';
+	
+Variables can be declared simply by naming the identifier, creating a global variable. However global variables should be avoided, locally scoped variables using var are preferred.
+
+	example = 'value';
 
 #### Constants
 
@@ -417,7 +421,42 @@ The convention for naming constant identifiers is in CAPS with an underscore use
 
 #### Arrays
 
+The predefined Array object is a constructor with it's own properties and methods. An array can be created with the Array constructor.
+
+	var example = new Array();
+	
+However it is preferred to create an array using the literal notation. 
+	
+	var literal = [];
+	
+An array literal can be created with specified values. 
+	
+	var literal = [one, two, three];
+
 #### Objects
+
+The predefined Object is a constructor with it's own properties and methods. An object can be created with the Object constructor.
+
+	var example = new Object();
+	
+However as with arrays it is preferred to create an object using the literal notation.	
+	
+	var literal = {};
+	
+An object literal can be created with a name/value pairing. The name can be an identifier or string, the value can be a property or a function.
+	
+	/* Name one identifier with string value. */
+	var literal = {one: 'test'};
+	/* Name 'two' string with a string value. */
+	var literal = {'two': 'test'};
+	/* Name three identifier with a named function as the value. */
+	function test() {};
+	var literal = {three: test()};
+	/* Name four identifier with a anonymous function as the value. */
+	var literal = {four: function () {}};
+	/* All examples combined. */
+	function test() {};
+	var literal = {one: 'test', 'two': 'test', three: test(), four: function () {}};
 
 ### Functions
 
@@ -526,6 +565,8 @@ Eval should be avoided.
 
 ### Reserved words
 
+Reserved words are restricted for use as identifiers, ECMAScript specifies current of future use for them [[3](#note-3)]. Identifiers are used for variables, constants, function declarations, function expressions, conditional statements and loops statements.
+
 * [break](https://developer.mozilla.org/en/JavaScript/Reference/Statements/break)
 * [case](https://developer.mozilla.org/en/JavaScript/Reference/Statements/switch)
 * [catch](https://developer.mozilla.org/en/JavaScript/Reference/Statements/try...catch)
@@ -552,6 +593,22 @@ Eval should be avoided.
 * [void](https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/void)
 * [while](https://developer.mozilla.org/en/JavaScript/Reference/Statements/while)
 * [with](https://developer.mozilla.org/en/JavaScript/Reference/Statements/with)
+* class
+* enum
+* [export](https://developer.mozilla.org/en/JavaScript/Reference/Statements/export)
+* extends
+* [import](https://developer.mozilla.org/en/JavaScript/Reference/Statements/import)
+* super
+* implements
+* interface
+* [let](https://developer.mozilla.org/en/JavaScript/Reference/Statements/let)
+* package
+* private
+* protected
+* public
+* static
+* [yield](https://developer.mozilla.org/en/JavaScript/Reference/Statements/yield)
+* undefined
 
 
 ### JavaScript comments
@@ -575,6 +632,7 @@ Multiple line comments should describe complex behaviour.
 
 1. Specific revision control system option is dependent on project requirements.
 2. [Calculating a selector's specificity](http://www.w3.org/TR/2009/PR-css3-selectors-20091215/#specificity)
+3. [Reserved Words - MDN](https://developer.mozilla.org/en/JavaScript/Reference/Reserved_Words)
 
 ## Developer resources
 
