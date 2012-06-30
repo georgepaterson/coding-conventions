@@ -481,6 +481,20 @@ Although function expressions can be given a name.
 Anonymous function expressions are preferred as the function is referenced by a single identifier.	
 
 ### Constructors
+
+A constructor is a function designed to initialise an object with predefined properties using the new operator. Constructor functions use Pascal case where the first character is capitalised.
+
+The example identifier uses the predefined Object constructor.
+
+	var example = new Object();
+
+An Audio function is designed as a constructor. The audio identifier is then initialised with the Audio constructor setting the volume property. 
+	
+	function Audio() {
+		this.volume = function() {};
+	}
+	var audio = new Audio();
+	audio.volume();	
 	
 ### Closures
 
@@ -638,3 +652,4 @@ Multiple line comments should describe complex behaviour.
 
 1. [Mozilla Developer Network](https://developer.mozilla.org/)
 2. [Code Conventions for the JavaScript Programming Language](http://javascript.crockford.com/code.html)
+3. [JavaScript The Definitive Guide](http://www.amazon.co.uk/JavaScript-Definitive-Guide-David-Flanagan/dp/0596101996)
