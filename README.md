@@ -585,7 +585,7 @@ The conditional operator is a ternary operator and can be used as a short form i
 
 	condition ? expression1 : expression2
 	
-It is preferred that if...else statements rather than the conditional operator are used as it improves the readability of the code.  
+It is recommended that if...else statements rather than the conditional operator are used as it improves the readability of the code.  
 
 ### Eval
 
@@ -663,7 +663,7 @@ Multiple line comments should describe complex behaviour.
 
 The architecture of JavaScript modules should be modular [[4](#note-4)], leveraging object oriented design patterns [[5](#note-5)].
 
-All JavaScript committed to the project repository must be linted for code quality, [http://www.jslint.com/](JSLint) is the preferred linting tool. Linting should be performed as part of the Continuous Integration process.
+All JavaScript committed to the project repository must be linted for code quality, [JSLint](http://www.jslint.com/) is the preferred linting tool. Linting should be performed as part of the Continuous Integration process.
 
 JavaScript modules should have associated unit test, this will allow easy identification of module failure.
 
