@@ -88,7 +88,29 @@ The doctype should be the first element declared on the page and the HTML5 docty
 
 	<!DOCTYPE html>
 	
-The HTML5 eliminates the Document Type Declaration. Although HTML5 is case insensitive we retain the formal syntax to allow the document to be parsed as XML.
+The HTML5 specification eliminates the Document Type Declaration. Although HTML5 is case insensitive we retain the formal syntax to allow the document to be parsed as XML.
+
+### Page title
+
+Every page should contain a title tag in the head of the document.
+
+	<title>Briefly describing the content of the page</title>
+	
+The title tag should uniquely but briefly describe the content of the page.
+
+### Charset meta tag
+
+The charset meta tag is required to define the character set used by the document.
+
+	<meta charset="utf-8">
+
+### Description meta tag
+
+Every page should contain a description meta tag in the head of the document.
+
+	<meta name="description" content="Uniquely and accurately summarise the page content.">
+	
+The description meta tag should uniquely and accurately summarise the page content. At a minimum it should be a sentence, at most a short paragraph.
 
 ### Syntax
 
@@ -122,6 +144,8 @@ This code uses more objects than is needed to describe the form.
 	<html lang="en-GB" dir="ltr">
 		<head>
 			<title>An unnecessary complex DOM</title>
+			<meta charset="utf-8">
+			<meta name="description" content="Complexity of the DOM should be reduced.">
 		</head>
 		<body>
 			<div>
@@ -151,6 +175,8 @@ We should aim to reduce the number of objects used to only those required to des
 	<html lang="en-GB" dir="ltr">
 		<head>
 			<title>A simple DOM</title>
+			<meta charset="utf-8">
+			<meta name="description" content="DOM has been reduced to the elements required to describe the page.">
 		</head>
 		<body>
 			<form>
