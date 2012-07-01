@@ -482,13 +482,13 @@ Anonymous function expressions are preferred as the function is referenced by a 
 
 ### Constructors
 
-A constructor is a function designed to initialise an object with predefined properties using the new operator. Constructor functions use Pascal case where the first character is capitalised.
+A constructor is a function designed to initialise an object with predefined properties using the new operator. Constructor functions use Pascalase where the first character is capitalised.
 
 The example identifier uses the predefined Object constructor.
 
 	var example = new Object();
 
-An Audio function is designed as a constructor. The audio identifier is then initialised with the Audio constructor setting the volume property. 
+An Audio function is designed as a constructor. The audio identifier is then initialised with the Audio constructor, this sets the volume property on audio. 
 	
 	function Audio() {
 		this.volume = function() {};
@@ -496,25 +496,27 @@ An Audio function is designed as a constructor. The audio identifier is then ini
 	var audio = new Audio();
 	audio.volume();	
 	
-### Closures
-
 ### Statements
 
-#### If
+The following statements should take the form described below.
+
+#### If statement
+
+If statement.
 
 	if (condition) {
 		statement;
 	}
 
-
+If statement with else.
 
 	if (condition) {
 		statement;
 	} else {
 		statement;
 	}
-
-#### Else if
+	
+If statement with additional condition and else.
 
 	if (condition) {
 		statement;
@@ -524,7 +526,7 @@ An Audio function is designed as a constructor. The audio identifier is then ini
 		statement;
 	}
 	
-#### Switch
+#### Switch statement
 
 	switch (expression) {
 		case label:
@@ -535,37 +537,49 @@ An Audio function is designed as a constructor. The audio identifier is then ini
 			break;
 		default:
 			statement;
-			break;
 	}
+	
+Each group of statements should end with break, return or throw.
 
-#### For
+#### For statement
 
 	for (expression; condition; expression) {
 		statement;
 	}
 
-#### While
+#### While statement
 
 	while (condition) {
 		statement;
 	}
 
-#### Do
+#### Do statement
 
 	do {
 		statement;
 	} while (condition);
 	
-#### Try
+#### Try statement
+
+Exception handling with a try statement.
 
 	try {
 		statement;
+	} catch (exception) {
+		statement;
 	}
-	catch (exception) {
+	
+Try statement with finally block.	
+	
+	try {
+		statement;
+	} catch (exception) {
+		statement;
+	} finally {
 		statement;
 	}
 
-### Operators
+### Conditional operator
 
 ### Eval
 
