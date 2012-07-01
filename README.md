@@ -581,6 +581,12 @@ Try statement with finally block.
 
 ### Conditional operator
 
+The conditional operator is a ternary operator and can be used as a short form if...else statement.
+
+	condition ? expression1 : expression2
+	
+It is preferred that if...else statements rather than the conditional operator are used as it improves the readability of the code.  
+
 ### Eval
 
 Eval is a predefined JavaScript function.
@@ -638,7 +644,6 @@ Reserved words are restricted for use as identifiers, ECMAScript specifies curre
 * [yield](https://developer.mozilla.org/en/JavaScript/Reference/Statements/yield)
 * undefined
 
-
 ### JavaScript comments
 
 JavaScript comments can either be single line or multiple line. All comments should be made before the code they are describing.
@@ -656,11 +661,19 @@ Multiple line comments should describe complex behaviour.
 
 ### JavaScript quality analysis
 
+The architecture of JavaScript modules should be modular [[4](#note-4)], leveraging object oriented design patterns [[5](#note-5)].
+
+All JavaScript committed to the project repository must be linted for code quality, [http://www.jslint.com/](JSLint) is the preferred linting tool. Linting should be performed as part of the Continuous Integration process.
+
+JavaScript modules should have associated unit test, this will allow easy identification of module failure.
+
 ## Notes
 
 1. Specific revision control system option is dependent on project requirements.
 2. [Calculating a selector's specificity](http://www.w3.org/TR/2009/PR-css3-selectors-20091215/#specificity)
 3. [Reserved Words - MDN](https://developer.mozilla.org/en/JavaScript/Reference/Reserved_Words)
+4. [Object Oriented JavaScript: Modular development](http://www.georgepaterson.com/2011/07/17/object-oriented-javascript-modular-development/)
+5. [Design Patterns](http://en.wikipedia.org/wiki/Design_Patterns_%28book%29)
 
 ## Developer resources
 
