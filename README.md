@@ -46,7 +46,7 @@ Apache alias example:
 	
 File reference for a project style sheet: 
 
-	<link rel="stylesheet" href="/assets/theme/style/common.css?ver=1" media="screen">
+	<link rel="stylesheet" href="/assets/theme/style/common.css?ver=1" media="screen" />
 
 Relative file paths are to be avoided.
 
@@ -102,13 +102,13 @@ The title tag should uniquely but briefly describe the content of the page.
 
 The charset meta tag is required to define the character set used by the document.
 
-	<meta charset="utf-8">
+	<meta charset="utf-8" />
 
 ### Description meta tag
 
 Every page should contain a description meta tag in the head of the document.
 
-	<meta name="description" content="Uniquely and accurately summarise the page content.">
+	<meta name="description" content="Uniquely and accurately summarise the page content." />
 	
 The description meta tag should uniquely and accurately summarise the page content. At a minimum it should be a sentence, at most a short paragraph.
 
@@ -126,9 +126,27 @@ All tags, including optional tags, must have a start and end tag.
 		<li>A closing list element may be optional but well structured code removes ambiguity.</li>
 	</ul>
 
-Single tags must be self closing.
+The start tag of void elements should be self closing: 
 
 	<input type="text" />
+	
+Void elements include:
+
+* area
+* base
+* br
+* col
+* commannd
+* hr
+* img
+* input
+* keygen
+* link
+* meta
+* param
+* source
+* track
+* wbr
 
 Descriptive syntax improves the understandability of the HTML document for distributed developers
 
@@ -144,8 +162,8 @@ This code uses more objects than is needed to describe the form.
 	<html lang="en-GB" dir="ltr">
 		<head>
 			<title>An unnecessary complex DOM</title>
-			<meta charset="utf-8">
-			<meta name="description" content="Complexity of the DOM should be reduced.">
+			<meta charset="utf-8" />
+			<meta name="description" content="Complexity of the DOM should be reduced." />
 		</head>
 		<body>
 			<div>
@@ -175,8 +193,8 @@ We should aim to reduce the number of objects used to only those required to des
 	<html lang="en-GB" dir="ltr">
 		<head>
 			<title>A simple DOM</title>
-			<meta charset="utf-8">
-			<meta name="description" content="DOM has been reduced to the elements required to describe the page.">
+			<meta charset="utf-8" />
+			<meta name="description" content="DOM has been reduced to the elements required to describe the page." />
 		</head>
 		<body>
 			<form>
@@ -508,7 +526,7 @@ Anonymous function expressions are preferred as the function is referenced by a 
 
 ### Constructors
 
-A constructor is a function designed to initialise an object with predefined properties using the new operator. Constructor functions use Pascalase where the first character is capitalised.
+A constructor is a function designed to initialise an object with predefined properties using the new operator. Constructor functions use Pascal case where the first character is capitalised.
 
 The example identifier uses the predefined Object constructor.
 
