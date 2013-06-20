@@ -82,6 +82,12 @@ Hungarian notation both Applications and Systems should be avoided.
 
 ## HTML
 
+### HTML standards
+
+Use HTML as defined in the [standards maintained by the W3c](http://www.w3.org/standards/techs/html#w3c_all).
+
+Further information can be found in the [Web Platform Docs](http://docs.webplatform.org/wiki/html) or on the [Mozilla Developer Network](https://developer.mozilla.org/).
+
 ### Doctype
 
 The doctype should be the first element declared on the page and the HTML5 doctype should be used. 
@@ -724,3 +730,4 @@ JavaScript modules should have associated unit test, this will allow easy identi
 1. [Mozilla Developer Network](https://developer.mozilla.org/)
 2. [Code Conventions for the JavaScript Programming Language](http://javascript.crockford.com/code.html)
 3. [JavaScript The Definitive Guide](http://www.amazon.co.uk/JavaScript-Definitive-Guide-David-Flanagan/dp/0596101996)
+4. [Web Platform Docs](http://docs.webplatform.org/wiki/html)
